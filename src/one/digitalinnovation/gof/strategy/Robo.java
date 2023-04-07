@@ -2,13 +2,13 @@ package one.digitalinnovation.gof.strategy;
 
 public class Robo {
 	
-	private Comportamento comportamento;
+	private Status status;
 
-	public void setComportamento(Comportamento comportamento) {
-		this.comportamento = comportamento;
+	public void setComportamento(Status status) {
+		this.status = status;
 	}
 	
 	public void mover() {
-		comportamento.mover();
+		status.mover();
 	}
 }
